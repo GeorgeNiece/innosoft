@@ -76,3 +76,5 @@ if [ "$FAIL" -eq 0 ]; then
 else
   echo "Failed Requests: ($FAIL)"
 fi
+
+#### why don't we see any Failed Requests? If you count the number of job PID, you see it will be less than the concurrency number, because we have the circuit break fail those concurrent requests
