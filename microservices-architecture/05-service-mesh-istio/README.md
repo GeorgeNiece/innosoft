@@ -138,6 +138,10 @@ curl: (7) Failed to connect to 10.111.189.11 port 80: Connection refused
  
 `kubectl apply -f manifests/egress.yaml`
 
+Now we can curl and receive an expected response
+
+`controlplane $ curl 10.111.189.11`
+
 ```text
 frontend-prod - 0.134secs
 http://business/ -> business-prod - 0.123secs
