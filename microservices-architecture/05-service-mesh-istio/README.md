@@ -118,7 +118,9 @@ the following command
 
 **Step 10:** Find the IP address of `istio-ingressgateway`.
 
-`kubectl get svc -n istio-system`
+`kubectl get svc -n istio-system | grep ingressgateway`
+
+istio-ingressgateway     LoadBalancer   10.106.219.46    <pending>     15020:30419/TCP,80:31380/TCP,443:31390/TCP,31400:31400/TCP,15029:32633/TCP,15030:31751/TCP,15031:30705/TCP,15032:32360/TCP,15443:30502/TCP   3m12s
 
 Save the IP address of `istio-ingressgateway`. You'll need it
 
