@@ -24,9 +24,9 @@ If you have cluster with Istio installed, start this exercise at Step 8.
 
 ## Download Istio
 
-**Step 1:** `curl -L https://git.io/getLatestIstio | ISTIO_VERSION=1.1.7 sh -`
+**Step 1:** `curl -L https://git.io/getLatestIstio | ISTIO_VERSION=1.4.9 sh -`
 
-**Step 2:** `cd istio-1.1.7`
+**Step 2:** `cd istio-1.4.9`
 
 **Step 3:** `export PATH=$PWD/bin:$PATH`
 
@@ -98,12 +98,18 @@ execute the following command:
 
 ## Install Istio-ized Multi-deployment Application
 
-**Step 9:** To create the deployments for the Istio-ized Multi-deployment Application, execute
+**Step 9:** Clone the application repo for this experiment and change directory to the istio experiment folder
+
+`git clone https://github.com/GeorgeNiece/innosoft.git`
+
+`cd innosoft/microservices-architecture/05-service-mesh-istio/`
+
+**Step 10a:** To create the deployments for the Istio-ized Multi-deployment Application, execute
 the following command
 
 `kubectl apply -f manifests/deployments.yaml`
 
-**Step 10:** To create the services for the Istio-ized Multi-deployment Application, execute
+**Step 10b:** To create the services for the Istio-ized Multi-deployment Application, execute
 the following command
 
 `kubectl apply -f manifests/services.yaml`
