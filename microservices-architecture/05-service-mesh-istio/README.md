@@ -122,22 +122,20 @@ the following command
 
 Save the IP address of `istio-ingressgateway`. You'll need it
 
-**Step 11:** Enter the IP address of `istio-ingressgateway` into the address bar of your computer's browser.
+**Step 11:** Now curl the address for the `istio-ingressgateway`.
 
 You should get an error, an "Unable to find web site" error.
 
-**Step 12:** Bind the ingress rule to Istio to allow access to the application.
+`controlplane $ curl 10.111.189.11`
+
+curl: (7) Failed to connect to 10.111.189.11 port 80: Connection refused
+
+**Step 12:** Bind the ingress and egress rules to Istio to allow access to the application.
 
 `kubectl apply -f manifests/ingress.yaml`
 
-```text
-frontend-prod - 0.155secs
-http://business/ -> business-prod - 0.12secs
-http://worldclockapi.com/api/json/utc/now -> StatusCodeError: 404 - ""
-```
-
-**Step 13:**  Aplly the egress to allow access to `worldclockapi.com`.
-
+**Step 13:**  Apply the egress to allow access to `worldclockapi.com`.  In Istio V1.4.X and newer any API is automatically given an egress mapping, however, we can still apply the egress if we had any changes to metadata that are desired for our experiements or services
+ 
 `kubectl apply -f manifests/egress.yaml`
 
 ```text
