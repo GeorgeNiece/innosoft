@@ -232,6 +232,7 @@ In this case, the port number of the NodePort is, `30758`.
 **WHERE**
 
 `CLUSTER_IP` is the IP address of the Master node which we retrieved with `kubectl cluster-info`
+
 `NODE_PORT` is the port on which was reported back from the call, `kubectl get services`, remember NodePorts are in the 30000-32767 range by default, which means a NodePort is unlikely to match a service’s intended port (for example, here 3000 is exposed as 30758). This is the example, but it would be very likely that your CLUSTER_IP or NODE_PORT will be different.
 
 For example:
