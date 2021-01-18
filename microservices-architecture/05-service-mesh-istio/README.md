@@ -155,7 +155,7 @@ All should be well.
 Istio supports the "circuit breaking" pattern. Circuit breaking allows you to write applications that
 limit the impact of failures, latency spikes, and other undesirable effects of network peculiarities.
 
-The example below is the manifest for an Isitio [DestinationRule](https://istio.io/docs/reference/config/networking/v1alpha3/destination-rule/)
+The example below is the manifest for an Istio [DestinationRule](https://istio.io/docs/reference/config/networking/v1alpha3/destination-rule/)
 that implements the circuit breaking pattern on the
 service, `frontend`.
 
