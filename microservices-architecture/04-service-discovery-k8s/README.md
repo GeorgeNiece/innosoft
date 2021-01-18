@@ -241,6 +241,12 @@ in the way the base image `node:8-alpine` handles `nslookup` in a container. The
 In other words, once we created the service, `business`, Kubernetes used its internal DNS naming mechanism 
 to make a DNS name, `business` that is well known within the cluster.
 
+At the command prompt execute:
+
+`nslookup frontend`
+
+This will show us that `nslookup` is reporting the IP address for the `frontend`
+
 You can `exit` the container using the following command:
 
 `exit`

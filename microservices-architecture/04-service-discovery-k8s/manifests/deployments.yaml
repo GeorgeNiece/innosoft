@@ -1,9 +1,13 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-prod
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+      version: prod
   template:
     metadata:
       labels:
@@ -22,12 +26,16 @@ spec:
         - name: UPSTREAM_URI
           value: "http://business/"
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: business-prod
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: business
+      version: prod
   template:
     metadata:
       labels:
