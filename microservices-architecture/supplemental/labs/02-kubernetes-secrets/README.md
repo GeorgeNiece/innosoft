@@ -8,7 +8,7 @@ The purpose of this lab is to provide a basic understanding of using [Kubernetes
 
 **Step 2:** Clone the code
 
-`git clone https://github.com/reselbob/innosoft.git`
+`git clone https://github.com/GeorgeNiece/innosoft.git`
 
 **Step 3:** Go to the project directory:
 

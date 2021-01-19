@@ -199,3 +199,24 @@ and deny any additional requests until the pending request is processed.
 Also, the `DestinationRule` will detect any host that triggers a server error (5XX code) in the services Envoy side car 
 and eject the pod out of the load balancing pool for 15 minutes. Visit [here](https://istio.io/docs/tasks/traffic-management/circuit-breaking/)
 for additional details about Istio and the circuit breaking pattern.
+
+To test this out we'll use the included stressTest.sh script and the rule manifest noted above.
+
+**Step 14:**  Create the circuit breaker via our manifest 
+
+`kubectl apply -f manifests/destinationRule.yaml`
+
+**Step 15:**  Test the circuit breaker with a simple curl test.  
+
+Ensure that the script is executable 
+
+`chmod 644 stressTest.sh`
+
+Now execute the script with the istio-ingressgateway address that we invoked singly in the earlier step
+
+`./stressTest.sh -a 10.111.189.11 -c 10 -r 1`
+
+Note: Although we specified concurrency of 10 we should see less than that for the Job PID output.  This is due to the circuit breaker being overcome by our test.
+
+
+

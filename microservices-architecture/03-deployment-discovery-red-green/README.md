@@ -31,7 +31,7 @@ server.listen(port, ()=>{
 
 **Step 2:** Clone this GitHub Repository
 
-`git clone https://github.com/reselbob/innosoft.git`
+`git clone https://github.com/GeorgeNiece/innosoft.git`
 
 Go the `manifests` directory of the project. The `manifests` directory contains all the `yaml` files
 we'll need to set up Red and Green deployments as well as the Kubernetes service that will bind to each accordingly.

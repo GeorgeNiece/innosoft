@@ -2,7 +2,7 @@
 
 **Step 1:**  Get the code
 
-`git clone https://github.com/reselbob/innosoft.git`
+`git clone https://github.com/GeorgeNiece/innosoft.git`
 
 **Step 2:**  Go to working directory
 

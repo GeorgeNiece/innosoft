@@ -18,7 +18,7 @@ on a Ubuntu virtual machine on Katacoda.
 
 **Step 2:** Clone this GitHub Repository
 
-`git clone https://github.com/reselbob/innosoft.git`
+`git clone https://github.com/GeorgeNiece/innosoft.git`
 
 **Step 3:** Navigate to the exercise folder
 
@@ -51,7 +51,7 @@ container](https://www.docker.com/resources/what-container) from within the Kata
 
 Using the code clones from the GitHub repository
 
-`git clone https://github.com/reselbob/innosoft.git`
+`git clone https://github.com/GeorgeNiece/innosoft.git`
 
 In directory:
 
@@ -169,7 +169,7 @@ new Katacoda playground
 
 **Step 2:** Clone this GitHub Repository
 
-`git clone https://github.com/reselbob/innosoft.git`
+`git clone https://github.com/GeorgeNiece/innosoft.git`
 
 **Step 3:** Navigate to the exercise folder
 
