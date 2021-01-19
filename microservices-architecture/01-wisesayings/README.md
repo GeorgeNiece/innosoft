@@ -163,7 +163,7 @@ Deleted: sha256:49262dad0034c291e677d5d5d9fb81e5da9fd0705ecaeb2b4f265c2003e6ad5c
 In this exercise we're going to build out Wise Sayings as a Kubernetes Deployment and Service in a
 new Katacoda playground
 
-**Step 1:** Go to the `kubernetes` playground in Katacoda:
+**Step 1:** Go to the `kubernetes` playground in Katacoda: note this is different than the first two exercises
 
 `https://katacoda.com/courses/kubernetes/playground`
 
