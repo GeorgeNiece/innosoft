@@ -18,7 +18,9 @@ orchestration systems besides Kubernetes, but behave consistently between them.
 Each node is configured for 2 CPUs and 5GB of RAM.
 
 It is possible to setup a Kubernetes cluster with Istio installed by creating the cluster using the Google Cloud Console. Just scroll down in the
-setup page and check the **enable Istio** check box.
+setup page and check the **enable Istio** check box.  You could do the same lab in EKS, ECS or AKS, as well.
+
+For our experiment we'll use Katacode Kubernetes Playground, https://www.katacoda.com/courses/kubernetes/playground
 
 If you have cluster with Istio installed, start this exercise at Step 8.
 
@@ -210,7 +212,7 @@ To test this out we'll use the included stressTest.sh script and the rule manife
 
 Ensure that the script is executable 
 
-`chmod 644 stressTest.sh`
+`chmod 755 stressTest.sh`
 
 Now execute the script with the istio-ingressgateway address that we invoked singly in the earlier step
 
